@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/icons/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://kit.fontawesome.com/0601e75f40.js" crossorigin="anonymous"></script>
+    <title>Streaming-service</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__content">
+            <a class="content__logo" href="#">
+                <i class="fa-solid fa-cat logo__img"></i>
+                <h1 class="logo__title">Bulka <span class="title__item">tv</span></h1>
+            </a>
+            <div class="content__form">
+                <form class="form__content">
+                    <input placeholder="Search" class="form__input" type="text">
+                    <button class="form__button" type="submit">
+                        <i class="fa-solid fa-magnifying-glass button__img"></i>
+                    </button>
+                </form>
+                <button class="form__button--microphone" type="button">
+                    <i class="fa-solid fa-microphone"></i>
+                </button>
+            </div>
+            <nav class="content__navigation">
+                <button type="button" class="navigation__button--1">
+                    <i class="fa-solid fa-bell"></i>
+                </button>
+                <button class="navigation__button--2" type="button">
+                    <i class="fa-solid fa-paw navigation__button--2--img"></i>
+                </button>
+                <ul class="navigation__list">
+                    <li class="navigation__list--item"><button class="navigation__list--btn" type="button">
+                            <i class="fa-solid fa-paw navigation__list--btn--img"></i>
+                            <span class="navigation__list--btn--text">Profile</span></button></li>
+                    <li class="navigation__list--item navigation__list--item--border"><button
+                            class="navigation__list--btn" type="button">
+                            <i class="fa-solid fa-gear navigation__list--btn--img"></i>
+                            <span
+                                class="navigation__list--btn--text navigation__list--btn--text--border">Settings</span></button>
+                    </li>
+                    <li class="navigation__list--item"><button class="navigation__list--btn" type="button">
+                            <i
+                                class="fa-solid fa-right-from-bracket navigation__list--btn--img navigation__list--btn--text--red"></i>
+                            <span class="navigation__list--btn--text navigation__list--btn--text--red">Log
+                                out</span></button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="wrapper__content">
+        <aside class="main__sidebar">
+            <ul class="sidebar__list">
+                <li class="sidebar__list--item">
+                    <div class="sidebar__list--item--content">
+                        <img class="sidebar__list--item--img" src="./images/bulkaAvatar.jpg" alt="avatar"><span
+                            class="sidebar__list--item--text1">Bulka</span>
+                    </div>
+                    <span class="sidebar__list--item--text2 sidebar__list--item--text2--redRound">9.3K</span>
+                </li>
+                <li class="sidebar__list--item">
+                    <div class="sidebar__list--item--content">
+                        <img class="sidebar__list--item--img" src="./images/catAvatar1.jpg" alt="avatar"> <span
+                            class="sidebar__list--item--text1">ChuChu</span>
+                    </div>
+                    <span class="sidebar__list--item--text2 sidebar__list--item--text2--redRound">5.3K</span>
+                </li>
+                <li class="sidebar__list--item">
+                    <div class="sidebar__list--item--content">
+                        <img class="sidebar__list--item--img" src="./images/catAvatar2.jfif" alt="avatar"><span
+                            class="sidebar__list--item--text1">Coco</span>
+                    </div>
+                    <span class="sidebar__list--item--text2 sidebar__list--item--text2--redRound">6.3K</span>
+                </li>
+                <li class="sidebar__list--item">
+                    <div class="sidebar__list--item--content">
+                        <img class="sidebar__list--item--img" src="./images/catAvatar3.jpg" alt="avatar"> <span
+                            class="sidebar__list--item--text1">LaLa</span>
+                    </div>
+                    <span class="sidebar__list--item--text2">4.3K</span>
+                </li>
+                <li class="sidebar__list--item">
+                    <div class="sidebar__list--item--content">
+                        <img class="sidebar__list--item--img" src="./images/catAvatar4.jpg" alt="avatar"><span
+                            class="sidebar__list--item--text1">MoMo</span>
+                    </div>
+                    <span class="sidebar__list--item--text2 sidebar__list--item--text2--redRound">2.3K</span>
+                </li>
+                <li class="sidebar__list--item">
+                    <div class="sidebar__list--item--content">
+                        <img class="sidebar__list--item--img" src="./images/catAvatar5.jpg" alt="avatar"><span
+                            class="sidebar__list--item--text1">NaNa</span>
+                    </div>
+                    <span class="sidebar__list--item--text2">5.3K</span>
+                </li>
+                <li class="sidebar__list--item">
+                    <div class="sidebar__list--item--content">
+                        <img class="sidebar__list--item--img" src="./images/catAvatar6.jpg" alt="avatar"><span
+                            class="sidebar__list--item--text1">ToTo</span>
+                    </div>
+                    <span class="sidebar__list--item--text2 sidebar__list--item--text2--redRound">7.3K</span>
+                </li>
+                <li class="sidebar__list--item">
+                    <div class="sidebar__list--item--content">
+                        <img class="sidebar__list--item--img" src="./images/catAvatar7.jpg" alt="avatar"><span
+                            class="sidebar__list--item--text1">DoDo</span>
+                    </div>
+                    <span class="sidebar__list--item--text2">1.3K</span>
+                </li>
+            </ul>
+            <div class="sidebar__socialLinks">
+                <h3 class="socialLinks__text">Join the Bulka's community!</h3>
+                <ul class="socialLinks__list">
+                    <li class="socialLinks__list--item"><a target="_blank" href="https://t.me/bsacademy">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a></li>
+                    <li class="socialLinks__list--item"><a target="_blank"
+                            href="https://www.instagram.com/binarystudiocat/"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li class="socialLinks__list--item"><a target="_blank"
+                            href="https://www.facebook.com/BinaryStudioAcademy/"><i
+                                class="fa-brands fa-facebook"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <main class="main">
+            <section class="main__slider">
+                <ul class="slider__filter">
+                    <li class="filter__item"><button class="filter__item--btn" type="button">All</button></li>
+                    <li class="filter__item"><button class="filter__item--btn" type="button">Food</button></li>
+                    <li class="filter__item"><button class="filter__item--btn" type="button">Music</button></li>
+                    <li class="filter__item"><button class="filter__item--btn" type="button">Humans</button></li>
+                    <li class="filter__item"><button class="filter__item--btn" type="button">Games</button></li>
+                    <li class="filter__item"><button class="filter__item--btn" type="button">Computers</button></li>
+                    <li class="filter__item"><button class="filter__item--btn" type="button">Comedies</button></li>
+                    <li class="filter__item"><button class="filter__item--btn" type="button">Apartments</button></li>
+                    <li class="filter__item"><button class="filter__item--btn" type="button">Politics</button></li>
+                    <li class="filter__item"><button class="filter__item--btn" type="button">Traveling</button></li>
+                    <li class="filter__item"><button class="filter__item--btn" type="button">Fashion</button></li>
+                    <li class="filter__item"><button class="filter__item--btn" type="button">Cooking show</button></li>
+                    <li class="filter__item"><button class="filter__item--btn" type="button">Swimming</button></li>
+                    <li class="filter__item"><button class="filter__item--btn" type="button">Human fun videos</button>
+                    </li>
+                    <li class="filter__item"><button class="filter__item--btn" type="button">Films</button></li>
+                    <li class="filter__item"><button class="filter__item--btn" type="button">Series</button></li>
+                </ul>
+                <div class="slider__wrapper">
+                    <input checked name="slider" class="slider__radio" id="slide1" type="radio">
+                    <input name="slider" class="slider__radio" id="slide2" type="radio">
+                    <input name="slider" class="slider__radio" id="slide3" type="radio">
+                    <input name="slider" class="slider__radio" id="slide4" type="radio">
+                    <input name="slider" class="slider__radio" id="slide5" type="radio">
+                    <div class="slider__cards">
+                        <div class="slider__card slider__card--1">
+                            <div class="card__preview">
+                                <div class="preview__hover"><i class="fa-solid fa-paw preview__hover--img"></i>
+                                </div>
+                                <span class="preview__live">live</span>
+                                <span class="preview__viewers">99.9K viewers</span>
+                                <img class="preview__img" src="./images/videoSliderPreview1.webp" alt="preview">
+                            </div>
+                            <div class="card__aside">
+                                <div class="card__aside--content">
+                                    <img class="aside--content--img" src="./images/bulkaAvatar.jpg" alt="avatar">
+                                    <div class="aside--content--text">
+                                        <h3 class="aside--content--title">Cats vs High Heels ...</h3>
+                                        <h4 class="aside--content--description aside--content--description--hover">
+                                            Bulka
+                                        </h4>
+                                    </div>
+                                </div>
+                                <p class="aside--content--description aside--content--description--selection">
+                                    Cats vs High Heels | Kittisaurus
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slider__card slider__card--2">
+                            <div class="card__preview">
+                                <div class="preview__hover"><i class="fa-solid fa-paw preview__hover--img"></i>
+                                </div>
+                                <span class="preview__viewers">35:43</span>
+                                <img class="preview__img" src="./images/videoSliderPreview2.webp" alt="preview">
+                            </div>
+                            <div class="card__aside">
+                                <div class="card__aside--content">
+                                    <img class="aside--content--img" src="./images/catAvatar3.jpg" alt="avatar">
+                                    <div class="aside--content--text">
+                                        <h3 class="aside--content--title">Cats vs Glass Dome</h3>
+                                        <h4 class="aside--content--description aside--content--description--hover">
+                                            CoCo
+                                        </h4>
+                                    </div>
+                                </div>
+                                <p class="aside--content--description aside--content--description--selection">Cats vs Glass Dome (ft. Snack) | Kittisaurus
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slider__card slider__card--3">
+                            <div class="card__preview">
+                                <div class="preview__hover"><i class="fa-solid fa-paw preview__hover--img"></i>
+                                </div>
+                                <span class="preview__live">live</span>
+                                <span class="preview__viewers">6.7K viewers</span>
+                                <img class="preview__img" src="./images/videoSliderPreview3.webp" alt="preview">
+                            </div>
+                            <div class="card__aside">
+                                <div class="card__aside--content">
+                                    <img class="aside--content--img" src="./images/catAvatar7.jpg" alt="avatar">
+                                    <div class="aside--content--text">
+                                        <h3 class="aside--content--title">My Robot Vacuum Transformed ...</h3>
+                                        <h4 class="aside--content--description aside--content--description--hover">
+                                            DoDo
+                                        </h4>
+                                    </div>
+                                </div>
+                                <p class="aside--content--description aside--content--description--selection">My Robot Vacuum Transformed into a Cat Uber! | Kittisaurus
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slider__card slider__card--4">
+                            <div class="card__preview">
+                                <div class="preview__hover"><i class="fa-solid fa-paw preview__hover--img"></i>
+                                </div>
+                                <span class="preview__viewers">35:43</span>
+                                <img class="preview__img" src="./images/videoSliderPreview4.webp" alt="preview">
+                            </div>
+                            <div class="card__aside">
+                                <div class="card__aside--content">
+                                    <img class="aside--content--img" src="./images/catAvatar6.jpg" alt="avatar">
+                                    <div class="aside--content--text">
+                                        <h3 class="aside--content--title">Cat Bridge Challenge!</h3>
+                                        <h4 class="aside--content--description aside--content--description--hover">
+                                            ToTo
+                                        </h4>
+                                    </div>
+                                </div>
+                                <p class="aside--content--description aside--content--description--selection">Cat Bridge Challenge! Stay Steady! | Kittisaurus
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slider__card slider__card--5">
+                            <div class="card__preview">
+                                <div class="preview__hover"><i class="fa-solid fa-paw preview__hover--img"></i>
+                                </div>
+                                <span class="preview__live">live</span>
+                                <span class="preview__viewers">4.3K viewers</span>
+                                <img class="preview__img" src="./images/videoSliderPreview5.webp" alt="preview">
+                            </div>
+                            <div class="card__aside">
+                                <div class="card__aside--content">
+                                    <img class="aside--content--img" src="./images/catAvatar5.jpg" alt="avatar">
+                                    <div class="aside--content--text">
+                                        <h3 class="aside--content--title">Cat Balance Beam ...</h3>
+                                        <h4 class="aside--content--description aside--content--description--hover">
+                                            NaNA
+                                        </h4>
+                                    </div>
+                                </div>
+                                <p class="aside--content--description aside--content--description--selection">Cat Balance Beam Challenge! Try Not to Fall! | Kittisaurus
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper__controls">
+                        <label class="slider__label" for="slide1"></label>
+                        <label class="slider__label" for="slide2"></label>
+                        <label class="slider__label" for="slide3"></label>
+                        <label class="slider__label" for="slide4"></label>
+                        <label class="slider__label" for="slide5"></label>
+                    </div>
+                </div>
+            </section>
+            <section class="main__gallery">
+                <div class="gallery__content">
+                    <div class="gallery__card">
+                        <div class="gallery__card--preview">
+                            <div class="gallery__card--preview--hover"><i
+                                    class="fa-solid fa-paw gallery__card--preview--icon"></i></div>
+                            <span class="preview__live">live</span>
+                            <span class="preview__viewers">5.7K viewers</span>
+                            <img class="gallery__card--preview--img" src="./images/videoPreview1.webp" alt="preview">
+                        </div>
+                        <div class="gallery__card--information">
+                            <img class="gallery__card--information--avatar" src="./images/catAvatar1.jpg" alt="avatar">
+                            <div class="gallery__card--information--text">
+                                <h3 class="gallery__card--information--title">Cats vs invisible wall ...</h3>
+                                <h4 class="gallery__card--information--subtitle">ChuChu</h4>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical gallery__card--information--aditioanl"></i>
+                        </div>
+                    </div>
+                    <div class="gallery__card">
+                        <div class="gallery__card--preview">
+                            <div class="gallery__card--preview--hover"><i
+                                    class="fa-solid fa-paw gallery__card--preview--icon"></i></div>
+                            <span class="preview__viewers">8:23</span>
+                            <img class="gallery__card--preview--img" src="./images/videoPreview2.webp" alt="preview">
+                        </div>
+                        <div class="gallery__card--information">
+                            <img class="gallery__card--information--avatar" src="./images/catAvatar3.jpg" alt="avatar">
+                            <div class="gallery__card--information--text">
+                                <h3 class="gallery__card--information--title">Fishing Cat Challenge</h3>
+                                <h4 class="gallery__card--information--subtitle">Lala</h4>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical gallery__card--information--aditioanl"></i>
+                        </div>
+                    </div>
+                    <div class="gallery__card">
+                        <div class="gallery__card--preview">
+                            <div class="gallery__card--preview--hover"><i
+                                    class="fa-solid fa-paw gallery__card--preview--icon"></i></div>
+                            <span class="preview__live">live</span>
+                            <span class="preview__viewers">2.1K viewers</span>
+                            <img class="gallery__card--preview--img" src="./images/videoPreview3.webp" alt="preview">
+                        </div>
+                        <div class="gallery__card--information">
+                            <img class="gallery__card--information--avatar" src="./images/catAvatar2.jfif" alt="avatar">
+                            <div class="gallery__card--information--text">
+                                <h3 class="gallery__card--information--title">Cat Obstacle Destruct ...</h3>
+                                <h4 class="gallery__card--information--subtitle">CoCo</h4>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical gallery__card--information--aditioanl"></i>
+                        </div>
+                    </div>
+                    <div class="gallery__card gallery__card--1">
+                        <div class="gallery__card--preview">
+                            <div class="gallery__card--preview--hover"><i
+                                    class="fa-solid fa-paw gallery__card--preview--icon"></i></div>
+                            <span class="preview__viewers">5:40</span>
+                            <img class="gallery__card--preview--img" src="./images/videoPreview4.webp" alt="preview">
+                        </div>
+                        <div class="gallery__card--information">
+                            <img class="gallery__card--information--avatar" src="./images/catAvatar4.jpg" alt="avatar">
+                            <div class="gallery__card--information--text">
+                                <h3 class="gallery__card--information--title">Cats vs Laser Challenge</h3>
+                                <h4 class="gallery__card--information--subtitle">MoMo</h4>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical gallery__card--information--aditioanl"></i>
+                        </div>
+                    </div>
+                    <div class="gallery__card">
+                        <div class="gallery__card--preview">
+                            <div class="gallery__card--preview--hover"><i
+                                    class="fa-solid fa-paw gallery__card--preview--icon"></i></div>
+                            <span class="preview__live">live</span>
+                            <span class="preview__viewers">5.4K viewers</span>
+                            <img class="gallery__card--preview--img" src="./images/videoPreview5.webp" alt="preview">
+                        </div>
+                        <div class="gallery__card--information">
+                            <img class="gallery__card--information--avatar" src="./images/catAvatar5.jpg" alt="avatar">
+                            <div class="gallery__card--information--text">
+                                <h3 class="gallery__card--information--title">Cat Hurdle Challenge!</h3>
+                                <h4 class="gallery__card--information--subtitle">NaNa</h4>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical gallery__card--information--aditioanl"></i>
+                        </div>
+                    </div>
+                    <div class="gallery__card">
+                        <div class="gallery__card--preview">
+                            <div class="gallery__card--preview--hover"><i
+                                    class="fa-solid fa-paw gallery__card--preview--icon"></i></div>
+                            <span class="preview__viewers">10:05</span>
+                            <img class="gallery__card--preview--img" src="./images/videoPreview6.webp" alt="preview">
+                        </div>
+                        <div class="gallery__card--information">
+                            <img class="gallery__card--information--avatar" src="./images/catAvatar7.jpg" alt="avatar">
+                            <div class="gallery__card--information--text">
+                                <h3 class="gallery__card--information--title">Funny Cat Whack-a-Mole</h3>
+                                <h4 class="gallery__card--information--subtitle">DoDo</h4>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical gallery__card--information--aditioanl"></i>
+                        </div>
+                    </div>
+                    <div class="gallery__card">
+                        <div class="gallery__card--preview">
+                            <div class="gallery__card--preview--hover"><i
+                                    class="fa-solid fa-paw gallery__card--preview--icon"></i></div>
+                            <span class="preview__live">live</span>
+                            <span class="preview__viewers">1.0K viewers</span>
+                            <img class="gallery__card--preview--img" src="./images/videoPreview7.webp" alt="preview">
+                        </div>
+                        <div class="gallery__card--information">
+                            <img class="gallery__card--information--avatar" src="./images/catAvatar6.jpg" alt="avatar">
+                            <div class="gallery__card--information--text">
+                                <h3 class="gallery__card--information--title">Water Minefield Challenge! ...</h3>
+                                <h4 class="gallery__card--information--subtitle">ToTo</h4>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical gallery__card--information--aditioanl"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">
+                <a class="footer__title" href="https://www.youtube.com/c/Kittisaurus" target="_blank">
+                    <h3>Inspired by Kittisaurus <i class="fa-brands fa-youtube"></i></h3>
+                </a>
+            </footer>
+        </main>
+    </div>
+</body>
+
+</html>

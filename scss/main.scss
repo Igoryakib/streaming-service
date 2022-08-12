@@ -1,0 +1,30 @@
+@import 'variables.scss';
+
+.main {
+    overflow-y: scroll;
+    width: calc(100vw - 250px);
+    height: calc(100vh - 75px);
+    flex-grow: 1;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // flex-direction: column;
+}
+
+.wrapper__content {
+    // padding-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.main__sidebar {
+    width: 240px;
+    height: calc(100vh - 75px);
+    background-color: $whiteGray;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    display: flex;
+    flex-direction: column;
+}

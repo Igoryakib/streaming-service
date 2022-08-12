@@ -1,0 +1,257 @@
+@import "variables.scss";
+
+.main__slider {
+    flex-grow: 1;
+    margin-bottom: 75px;
+}
+
+.slider__filter {
+    padding: 14px 20px;
+    margin: 0 auto;
+    height: 60px;
+    overflow-x: scroll;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 85px;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.filter__item {
+    margin: 0 6px 0 6px;
+    width: fit-content;
+    flex-shrink: 0;
+    border-radius: 18px;
+    transition: 200ms linear;
+}
+
+.filter__item--btn {
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 18px;
+    background-color: $whiteGray;
+    border: 2px solid $gray;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: $textFamily;
+    color: $black;
+    transition: 200ms linear;
+    &:hover {
+        background-color: $gray;
+    }
+    &:focus {
+        background-color: $yellow;
+        color: $white;
+        border: 2px solid transparent;
+    }
+}
+
+.slider__wrapper {
+    padding-top: 130px;
+    margin: 0 auto;
+    max-width: 650px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    & > input {
+        display: none;
+    }
+}
+
+.slider__cards {
+    position: relative;
+    margin: 0 auto;
+    max-width: 650px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.slider__card {
+    opacity: 0;
+    z-index: 0;
+    position: absolute;
+    transition: 250ms linear;
+    flex-shrink: 0;
+    max-width: 590px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.56);
+    -moz-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.56);
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.56);
+    -webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	-moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	-o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+}
+
+#slide1:checked ~ .slider__cards > .slider__card--1,
+#slide2:checked ~ .slider__cards > .slider__card--2,
+#slide3:checked ~ .slider__cards > .slider__card--3,
+#slide4:checked ~ .slider__cards > .slider__card--4,
+#slide5:checked ~ .slider__cards > .slider__card--5{
+	opacity: 1;
+	z-index: 60;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+
+.slider__wrapper .wrapper__controls {
+    top: 135px;
+	position: relative;
+    z-index: 60;
+}
+
+.wrapper__controls label:hover, 
+#slide1:checked ~ .wrapper__controls label:nth-of-type(1),
+#slide2:checked ~ .wrapper__controls label:nth-of-type(2),
+#slide3:checked ~ .wrapper__controls label:nth-of-type(3),
+#slide4:checked ~ .wrapper__controls label:nth-of-type(4),
+#slide5:checked ~ .wrapper__controls label:nth-of-type(5) {
+	background: $blue;
+}
+
+.wrapper__controls label:after {
+	border: 2px solid $darkgray;
+	content: " ";
+	display: block;
+	height: 17px;
+	left: -4px;
+	position: absolute;
+	top: -4px;
+	width: 17px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.wrapper__controls label {
+	cursor: pointer;
+	display: inline-block;
+	height: 9px;
+	margin: 25px 12px 0 16px;
+	position: relative;
+	width: 9px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-transition: background ease-in-out .5s;
+	-moz-transition: background ease-in-out .5s;
+	-o-transition: background ease-in-out .5s;
+	transition: background ease-in-out .5s;
+}
+
+.wrapper__controls label:hover, 
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3),
+#slide4:checked ~ .controls label:nth-of-type(4),
+#slide5:checked ~ .controls label:nth-of-type(5) {
+	background: $gray;
+}
+
+.card__preview {
+    z-index: 1;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    &:hover > .preview__hover {
+        opacity: 1;
+        visibility: initial;
+        pointer-events: initial;
+    }
+}
+
+.preview__hover {
+    @extend %previewHover;
+}
+
+.preview__hover--img {
+    @extend %previewImg;
+}
+
+.preview__live {
+    @extend %liveIcon;
+}
+
+.preview__viewers {
+    @extend %viewsIcon
+}
+
+.preview__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.card__aside {
+    z-index: 1;
+    border-radius: 5px;
+    text-align: left;
+    padding: 0 15px 0 15px;
+    max-width: 170px;
+    width: 100%;
+    background-color: $whiteGray;
+}
+
+.card__aside--content {
+    max-width: 170px;
+    margin: 15px auto 15px auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aside--content--img {
+    @extend %avatar;
+}
+
+.aside--content--text {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    margin-left: 13px
+}
+
+.aside--content--title {
+    @extend %cardContentTitle;
+}
+
+.aside--content--description {
+    @extend %cardContentText;
+}
+
+.aside--content--description--hover {
+    transition: 200ms linear;
+    cursor: pointer;
+    &:hover {
+        color: $blue;
+    }
+}
+
+.aside--content--description--selection::selection {
+    background-color: $yellow;
+    color: $white;
+}
